@@ -1,0 +1,10 @@
+{
+  "name": "porfolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./CV_React run dev",
+    "build": "npm --prefix ./CV_React run build",
+    "preview": "npm --prefix ./CV_React run preview",
+    "install:app": "npm --prefix ./CV_React install"
+  }
+}

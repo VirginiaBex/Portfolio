@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #2a2a2a;
+  background-color: #F5E6D3;
+}
+
+/* ESTILOS PRINCIPALES */
+
+/* Encabezado */
+.header {
+  background: linear-gradient(135deg, #E8DCC8 0%, #D4C5B9 100%);
+  color: #2a2a2a;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #2a2a2a;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Navegación */
+.nav {
+  background-color: #2a2a2a;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #E8DCC8;
+  color: #2a2a2a;
+}
+
+/* Contenido Principal */
+.main-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  min-height: calc(100vh - 300px);
+}
+
+/* Página de Inicio */
+.landing-page {
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.hero {
+  background: linear-gradient(135deg, #E8DCC8 0%, #D4C5B9 100%);
+  color: #2a2a2a;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #2a2a2a;
+  color: #F5E6D3;
+  padding: 0.8rem 2rem;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #F5E6D3;
+  color: #2a2a2a;
+}
+
+.intro {
+  padding: 2rem;
+}
+
+.intro h3 {
+  color: #2a2a2a;
+  margin-bottom: 1rem;
+}
+
+/* Páginas de Portafolio y Experiencia */
+.portfolio-page,
+.experience-page {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.portfolio-page h2,
+.experience-page h2 {
+  color: #2a2a2a;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.projects-container,
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project,
+.experience-item {
+  border: 2px solid #E8DCC8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #FFFBF5;
+}
+
+.project:hover,
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project h3,
+.experience-item h3 {
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  color: #2a2a2a;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #E8DCC8;
+}
+
+.project a:hover {
+  color: #D4C5B9;
+  border-bottom-color: #2a2a2a;
+}
+
+.company {
+  color: #6b6b6b;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+/* Pie de Página */
+.footer {
+  background-color: #2a2a2a;
+  color: #F5E6D3;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #E8DCC8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #F5E6D3;
+}
+
+.custom-navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Responsive - Diseño Adaptable */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav a {
+    padding: 0.8rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects-container,
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+}

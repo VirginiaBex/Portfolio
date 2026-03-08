@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Gestor de Tareas Interactivo",
+    "description": "Aplicación web para gestionar tareas diarias. Permite crear, editar, eliminar y marcar tareas como completadas. Los datos se guardaban en localStorage para persistencia.",
+    "image": "https://via.placeholder.com/300x200?text=Gestor+Tareas",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["React", "JavaScript", "CSS", "LocalStorage"]
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Personal (Este mismo)",
+    "description": "Mi CV interactivo realizado con React. Incluye modo claro/oscuro, componentes reutilizables, datos dinámicos en JSON y animaciones suaves.",
+    "image": "https://via.placeholder.com/300x200?text=Portfolio",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["React", "Context API", "Bootstrap", "JSON"]
+  },
+  {
+    "id": 3,
+    "title": "Sistema de Registro de Usuarios",
+    "description": "Aplicación de gestión de usuarios con formularios validados. Permite añadir, editar y eliminar usuarios. Realizado con JavaScript vanilla y CSS.",
+    "image": "https://via.placeholder.com/300x200?text=Registro",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["JavaScript", "HTML", "CSS", "Validación"]
+  },
+  {
+    "id": 4,
+    "title": "Tienda Online Responsive",
+    "description": "Página de e-commerce responsive con catálogo de productos, carrito de compra funcional y diseño mobile-first. Practicé CSS Grid y Flexbox.",
+    "image": "https://via.placeholder.com/300x200?text=E-Shop",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive"]
+  },
+  {
+    "id": 5,
+    "title": "Blog con Comentarios",
+    "description": "Blog dinámico con sistema de comentarios. Artículos organizados por categorías. Utilicé componentes React reutilizables y useState para gestionar estados.",
+    "image": "https://via.placeholder.com/300x200?text=Blog",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["React", "JavaScript", "CSS", "Hooks"]
+  },
+  {
+    "id": 6,
+    "title": "Generador de Contraseñas",
+    "description": "Herramienta para generar contraseñas seguras con diferentes opciones (mayúsculas, números, símbolos). Incluye copy-to-clipboard funcional.",
+    "image": "https://via.placeholder.com/300x200?text=Password+Generator",
+    "link": "https://github.com/VirginiaBex",
+    "tags": ["JavaScript", "HTML", "CSS"]
+  }
+]
+
