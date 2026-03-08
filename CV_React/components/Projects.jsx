@@ -12,7 +12,10 @@ export default function Projects() {
     // Cargar proyectos desde JSON
     const loadProjects = async () => {
       try {
-        const response = await fetch('/data/projects.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/projects.json`);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
         const data = await response.json();
         setProjects(data);
       } catch (error) {

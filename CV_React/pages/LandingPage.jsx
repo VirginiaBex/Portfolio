@@ -37,7 +37,7 @@ export default function LandingPage() {
                 padding: '0'
               }}>
                 <img 
-                  src="/sinFondo.png" 
+                  src={`${import.meta.env.BASE_URL}sinFondo.png`} 
                   alt="Virginia María Berenguel Expósito" 
                   style={{
                     width: '100%',
