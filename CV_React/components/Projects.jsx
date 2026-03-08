@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
 import { useTheme } from '../context/ThemeContext';
+import projectsData from '../data/projects.json';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -9,23 +10,8 @@ export default function Projects() {
   const theme = useTheme();
 
   useEffect(() => {
-    // Cargar proyectos desde JSON
-    const loadProjects = async () => {
-      try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/projects.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-        const data = await response.json();
-        setProjects(data);
-      } catch (error) {
-        console.error('Error al cargar proyectos:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadProjects();
+    setProjects(projectsData);
+    setLoading(false);
   }, []);
 
   if (loading) {
